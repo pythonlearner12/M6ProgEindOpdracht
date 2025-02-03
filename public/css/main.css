@@ -1,0 +1,32 @@
+#heroImgPhone{
+    display: none;
+}
+
+#heroImg{
+    display: block;
+}
+
+#herotext{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size:clamp(1rem, 3vw, 2.5rem);
+    min-width:40rem
+}
+
+@media screen and (max-width: 750px) {
+    #heroImg {
+        display: none;
+    }
+
+    #heroImgPhone {
+        display: block;
+    }
+
+    #herotext{
+        top:40%;
+        /* padding: 0 10rem; */
+    }
+}

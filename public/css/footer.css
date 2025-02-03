@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    padding: 5rem var(--globalSidePadding);
+    font-size: clamp(1.3rem, 1.5vw, 2rem);
+    background-color: rgb(30, 30, 30);
+    color: white;
+    padding: 3rem 0;
+}
+
+.footer__img {
+    width: clamp(0.5rem, 8vw, 5rem);
+}
+
+.footer__container {
+    flex: auto;
+    max-width: 25%;
+}
+
+.aTagFooter{
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 750px) {
+    .footer {
+        flex-direction: column;
+        gap: 5rem;
+        font-size: 3rem;
+    }
+
+    .footer__img {
+        width: 8rem;
+    }
+    .footer__container {
+        max-width: 100%;
+    }
+}
